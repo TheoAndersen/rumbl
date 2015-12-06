@@ -11,7 +11,7 @@ defmodule Rumb1 do
       supervisor(Rumb1.Endpoint, []),
       # Start the Ecto repository
       #
-      #pworker(Rumb1.Repo, []),
+      worker(Rumb1.Repo, []),
       # Here you could define other workers and supervisors as children
       # worker(Rumb1.Worker, [arg1, arg2, arg3]),
     ]
