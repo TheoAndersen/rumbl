@@ -7,6 +7,7 @@ defmodule Rumb1.Router do
     plug :fetch_flash
     plug :protect_from_forgery
     plug :put_secure_browser_headers
+    plug Rumb1.Auth, repo: Rumb1.Repo
   end
 
   pipeline :api do
