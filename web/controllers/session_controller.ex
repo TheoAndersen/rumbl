@@ -18,4 +18,11 @@ defmodule Rumb1.SessionController do
     end
   end
 
+  def delete(conn, _) do
+    conn
+    |> Rumb1.Auth.logout()
+    |> put_flash(:info, "Logged out!")
+    |> redirect(to: page_path(conn, :index))
+  end
+
 end
