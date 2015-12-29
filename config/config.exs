@@ -6,12 +6,12 @@
 use Mix.Config
 
 # Configures the endpoint
-config :rumb1, Rumb1.Endpoint,
+config :rumb1, Rumbl.Endpoint,
   url: [host: "localhost"],
   root: Path.dirname(__DIR__),
   secret_key_base: "3cw5rU9j7sSvSBTBsBHuc+xib7I7doD4HsBFWHKdBGBbX1YuvKFlC0NTNGhIjGPV",
   render_errors: [accepts: ~w(html json)],
-  pubsub: [name: Rumb1.PubSub,
+  pubsub: [name: Rumbl.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger

@@ -1,5 +1,5 @@
-defmodule Rumb1.ErrorView do
-  use Rumb1.Web, :view
+defmodule Rumbl.ErrorView do
+  use Rumbl.Web, :view
 
   def render("404.html", _assigns) do
     "Page not found"

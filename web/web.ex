@@ -1,12 +1,12 @@
-defmodule Rumb1.Web do
+defmodule Rumbl.Web do
   @moduledoc """
   A module that keeps using definitions for controllers,
   views and so on.
 
   This can be used in your application as:
 
-      use Rumb1.Web, :controller
-      use Rumb1.Web, :view
+      use Rumbl.Web, :controller
+      use Rumbl.Web, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -29,11 +29,11 @@ defmodule Rumb1.Web do
     quote do
       use Phoenix.Controller
 
-      alias Rumb1.Repo
+      alias Rumbl.Repo
       import Ecto.Model
       import Ecto.Query, only: [from: 1, from: 2]
 
-      import Rumb1.Router.Helpers
+      import Rumbl.Router.Helpers
     end
   end
 
@@ -47,7 +47,7 @@ defmodule Rumb1.Web do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import Rumb1.Router.Helpers
+      import Rumbl.Router.Helpers
     end
   end
 
@@ -61,7 +61,7 @@ defmodule Rumb1.Web do
     quote do
       use Phoenix.Channel
 
-      alias Rumb1.Repo
+      alias Rumbl.Repo
       import Ecto.Model
       import Ecto.Query, only: [from: 1, from: 2]
     end

@@ -1,4 +1,4 @@
-defmodule Rumb1.Repo do
+defmodule Rumbl.Repo do
   use Ecto.   Repo, otp_app: :rumb1
 end
 

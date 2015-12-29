@@ -1,3 +1,3 @@
-defmodule Rumb1.LayoutViewTest do
-  use Rumb1.ConnCase, async: true
+defmodule Rumbl.LayoutViewTest do
+  use Rumbl.ConnCase, async: true
 end

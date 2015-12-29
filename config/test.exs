@@ -2,7 +2,7 @@ use Mix.Config
 
 # We don't run a server during test. If one is required,
 # you can enable the server option below.
-config :rumb1, Rumb1.Endpoint,
+config :rumb1, Rumbl.Endpoint,
   http: [port: 4001],
   server: false
 
@@ -10,7 +10,7 @@ config :rumb1, Rumb1.Endpoint,
 config :logger, level: :warn
 
 # Configure your database
-config :rumb1, Rumb1.Repo,
+config :rumb1, Rumbl.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
   password: "postgres",

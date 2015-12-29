@@ -1,3 +1,3 @@
-defmodule Rumb1.SessionView do
-	use Rumb1.Web, :view
+defmodule Rumbl.SessionView do
+	use Rumbl.Web, :view
 end

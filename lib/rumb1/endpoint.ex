@@ -1,7 +1,7 @@
-defmodule Rumb1.Endpoint do
+defmodule Rumbl.Endpoint do
   use Phoenix.Endpoint, otp_app: :rumb1
 
-  socket "/socket", Rumb1.UserSocket
+  socket "/socket", Rumbl.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #
@@ -35,5 +35,5 @@ defmodule Rumb1.Endpoint do
     key: "_rumb1_key",
     signing_salt: "5Hl1yMVS"
 
-  plug Rumb1.Router
+  plug Rumbl.Router
 end

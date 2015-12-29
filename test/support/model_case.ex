@@ -1,4 +1,4 @@
-defmodule Rumb1.ModelCase do
+defmodule Rumbl.ModelCase do
   @moduledoc """
   This module defines the test case to be used by
   model tests.
@@ -16,16 +16,16 @@ defmodule Rumb1.ModelCase do
 
   using do
     quote do
-      alias Rumb1.Repo
+      alias Rumbl.Repo
       import Ecto.Model
       import Ecto.Query, only: [from: 2]
-      import Rumb1.ModelCase
+      import Rumbl.ModelCase
     end
   end
 
   setup tags do
     unless tags[:async] do
-      Ecto.Adapters.SQL.restart_test_transaction(Rumb1.Repo, [])
+      Ecto.Adapters.SQL.restart_test_transaction(Rumbl.Repo, [])
     end
 
     :ok

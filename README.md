@@ -1,4 +1,4 @@
-# Rumb1
+# Rumbl
 
 To start your Phoenix app:
 

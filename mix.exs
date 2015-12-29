@@ -1,4 +1,4 @@
-defmodule Rumb1.Mixfile do
+defmodule Rumbl.Mixfile do
   use Mix.Project
 
   def project do
@@ -17,7 +17,7 @@ defmodule Rumb1.Mixfile do
   #
   # Type `mix help compile.app` for more information.
   def application do
-    [mod: {Rumb1, []},
+    [mod: {Rumbl, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger,
                     :phoenix_ecto, :postgrex, :comeonin]]
   end

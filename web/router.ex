@@ -1,5 +1,5 @@
-defmodule Rumb1.Router do
-  use Rumb1.Web, :router
+defmodule Rumbl.Router do
+  use Rumbl.Web, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -7,14 +7,14 @@ defmodule Rumb1.Router do
     plug :fetch_flash
     plug :protect_from_forgery
     plug :put_secure_browser_headers
-    plug Rumb1.Auth, repo: Rumb1.Repo
+    plug Rumbl.Auth, repo: Rumbl.Repo
   end
 
   pipeline :api do
     plug :accepts, ["json"]
   end
 
-  scope "/", Rumb1 do
+  scope "/", Rumbl do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
@@ -30,7 +30,7 @@ defmodule Rumb1.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", Rumb1 do
+  # scope "/api", Rumbl do
   #   pipe_through :api
   # end
 end
